@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" width="180" height="180">
+  <!-- Background -->
+  <rect width="180" height="180" fill="#1a1a1a" rx="36"/>
+  
+  <!-- Gold border ring -->
+  <rect width="172" height="172" x="4" y="4" fill="none" stroke="#cfa968" stroke-width="2" rx="33"/>
+  
+  <!-- Decorative corners dots -->
+  <circle cx="28" cy="28" r="2" fill="#cfa968" opacity="0.6"/>
+  <circle cx="152" cy="28" r="2" fill="#cfa968" opacity="0.6"/>
+  <circle cx="28" cy="152" r="2" fill="#cfa968" opacity="0.6"/>
+  <circle cx="152" cy="152" r="2" fill="#cfa968" opacity="0.6"/>
+
+  <!-- A•S-K -->
+  <text 
+    x="90" 
+    y="68" 
+    font-family="Georgia, 'Times New Roman', serif" 
+    font-size="24" 
+    font-weight="bold" 
+    fill="#cfa968" 
+    text-anchor="middle" 
+    letter-spacing="4"
+  >A•S-K</text>
+
+  <!-- Thin divider line -->
+  <line x1="50" y1="80" x2="130" y2="80" stroke="#cfa968" stroke-width="0.8" opacity="0.5"/>
+  
+  <!-- Shop (cursive style) -->
+  <text 
+    x="90" 
+    y="118" 
+    font-family="Georgia, 'Times New Roman', serif" 
+    font-size="38" 
+    font-style="italic"
+    font-weight="400"
+    fill="#e6c88a" 
+    text-anchor="middle"
+  >Shop</text>
+  
+  <!-- Thin divider line -->
+  <line x1="50" y1="128" x2="130" y2="128" stroke="#cfa968" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- S•N -->
+  <text 
+    x="90" 
+    y="152" 
+    font-family="Georgia, 'Times New Roman', serif" 
+    font-size="16" 
+    font-weight="bold"
+    fill="#cfa968" 
+    text-anchor="middle"
+    letter-spacing="4"
+  >S•N</text>
+</svg>
