@@ -114,7 +114,7 @@ interface AdminState {
 
 const API_URL = 'http://localhost:3000/api';
 
-export const useAdminStore = create<AdminState>()((set, get) => ({
+export const useAdminStore = create<AdminState>()((set) => ({
   categories: [],
   coupons: [],
   shippingZones: [],

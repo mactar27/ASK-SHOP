@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Search, User, ShoppingBag } from 'lucide-react';
+import { Search, ShoppingBag } from 'lucide-react';
 import { TopBar } from './TopBar';
 import { useCartStore } from '../../store/useCartStore';
 

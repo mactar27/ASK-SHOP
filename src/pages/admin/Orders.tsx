@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { Eye, Edit2, Download } from 'lucide-react';
+import { Edit2 } from 'lucide-react';
 import { useAdminStore } from '../../store/useAdminStore';
 import type { Order } from '../../store/useAdminStore';
 import { Modal } from '../../components/admin/Modal';
 
 export const AdminOrders: React.FC = () => {
-  const { orders, updateOrder, deleteOrder } = useAdminStore();
+  const { orders, updateOrder } = useAdminStore();
   
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [editingId, setEditingId] = useState<string | null>(null);

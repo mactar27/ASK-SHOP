@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Plus, Edit2, Trash2, Search, Filter } from 'lucide-react';
+import { Plus, Edit2, Trash2 } from 'lucide-react';
 import { useAdminStore } from '../../store/useAdminStore';
 import type { Product } from '../../store/useAdminStore';
 import { Modal } from '../../components/admin/Modal';

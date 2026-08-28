@@ -47,8 +47,7 @@ export const Checkout: React.FC = () => {
       const orderId = `#${Math.floor(1000 + Math.random() * 9000)}`;
       const today = new Date().toLocaleDateString('fr-FR');
       
-      await addOrder({
-        id: orderId,
+      const orderData = {
         client: formData.fullName,
         email: formData.email,
         phone: formData.phone,
@@ -57,17 +56,18 @@ export const Checkout: React.FC = () => {
         items: items.length,
         status: 'En attente',
         color: 'bg-blue-100 text-blue-700'
-      });
+      };
+      await addOrder(orderData as Parameters<typeof addOrder>[0]);
 
-      await addCustomer({
-        id: `C${Math.floor(1000 + Math.random() * 9000)}`,
+      const customerData = {
         name: formData.fullName,
         email: formData.email,
         phone: formData.phone,
         orders: 1,
         totalSpent: total,
         lastOrder: today
-      });
+      };
+      await addCustomer(customerData as Parameters<typeof addCustomer>[0]);
 
       clearCart();
       navigate('/confirmation', { 
